@@ -1,11 +1,32 @@
-# JS-Tic-Tac-Toc
-Experience tic tac toc through a javascript project.
+# Tic-Tac-Toc
 
-## Why is this a good programme?
+## Introduction
 
-If there is a playful way to play with one of your friends, then this is the program for you. Not only can you save time and money by not drawing on paper, but you can also save trees from becoming paper. Use the ultimate Tic Tac Toc game now and enjoy the unlimited freedom of running Windows XP.
+This project is a simple implementation of the Tic-Tac-Toe game using HTML, CSS, and JavaScript. The game allows two players to take turns placing their symbols (X or O) on a 3x3 grid with the goal of getting three in a row.
 
-**The program can be integrated into your own part by specifying the appropriate builders.**
->The program may contain bugs, these will be fixed later. 
+## Usage
 
-`v1.0`
+1. Open your web browser and navigate to the index.html file.
+2. The game board is displayed as a 3x3 grid.
+3. Players take turns clicking on empty cells to place their symbol (X or O).
+4. The game will automatically switch turns between Player X and Player O.
+5. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins.
+6. If the board is filled without a winner, the game ends in a draw.
+
+## Installation
+
+No installation is required; you can run the game directly by opening the `index.html` file in your web browser.
+
+```bash
+git clone https://github.com/username/tic-tac-toe.git
+cd tic-tac-toe
+open index.html
+```
+
+## Development
+
+If you want to contribute to the project, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. For more information, read the LICENSE file.
