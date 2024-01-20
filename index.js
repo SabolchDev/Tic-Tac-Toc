@@ -7,6 +7,7 @@ const tabel = [
 var swiched = false;
 var disableToo = false;
 const errorMessage_1 = "The place is reserved";
+var date = Date();
 
 function addFunOne() {
     var button = document.getElementById("play-button-1");
@@ -191,98 +192,98 @@ function addFunNin() {
 function firstRule() {
 
     if (tabel[0][0] == '1' && tabel[0][1] == '1' && tabel[0][2] == '1') {
-        document.getElementById("play-button-1").style.borderColor = "green";
-        document.getElementById("play-button-4").style.borderColor = "green";
-        document.getElementById("play-button-7").style.borderColor = "green";
+        document.getElementById("play-button-1").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-4").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-7").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if(tabel[0][0] == '0' && tabel[0][1] == '0' && tabel[0][2] == '0'){
-        document.getElementById("play-button-1").style.borderColor = "red";
-        document.getElementById("play-button-4").style.borderColor = "red";
-        document.getElementById("play-button-7").style.borderColor = "red";
+        document.getElementById("play-button-1").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-4").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-7").style.border = "solid 2px #FF7272";
         disableAll();
     }
 
     if (tabel[1][0] == '1' && tabel[1][1] == '1' && tabel[1][2] == '1') {
-        document.getElementById("play-button-2").style.borderColor = "green";
-        document.getElementById("play-button-5").style.borderColor = "green";
-        document.getElementById("play-button-8").style.borderColor = "green";
+        document.getElementById("play-button-2").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-5").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-8").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if(tabel[1][0] == '0' && tabel[1][1] == '0' && tabel[1][2] == '0') {
-        document.getElementById("play-button-2").style.borderColor = "red";
-        document.getElementById("play-button-5").style.borderColor = "red";
-        document.getElementById("play-button-8").style.borderColor = "red";
+        document.getElementById("play-button-2").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-5").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-8").style.border = "solid 2px #FF7272";
         disableAll();
     }
 
     if (tabel[0][0] == '1' && tabel[1][0] == '1' && tabel[2][0] == '1') {
-        document.getElementById("play-button-1").style.borderColor = "green";
-        document.getElementById("play-button-2").style.borderColor = "green";
-        document.getElementById("play-button-3").style.borderColor = "green";
+        document.getElementById("play-button-1").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-2").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-3").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if (tabel[0][0] == '0' && tabel[1][0] == '0' && tabel[2][0] == '0') {
-        document.getElementById("play-button-1").style.borderColor = "red";
-        document.getElementById("play-button-2").style.borderColor = "red";
-        document.getElementById("play-button-3").style.borderColor = "red";
+        document.getElementById("play-button-1").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-2").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-3").style.border = "solid 2px #FF7272";
         disableAll();
     }
 
     if (tabel[2][0] == '1' && tabel[2][1] == '1' && tabel[2][2] == '1') {
-        document.getElementById("play-button-3").style.borderColor = "green";
-        document.getElementById("play-button-6").style.borderColor = "green";
-        document.getElementById("play-button-9").style.borderColor = "green";
+        document.getElementById("play-button-3").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-6").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-9").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if (tabel[2][0] == '0' && tabel[2][1] == '0' && tabel[2][2] == '0') {
-        document.getElementById("play-button-3").style.borderColor = "red";
-        document.getElementById("play-button-6").style.borderColor = "red";
-        document.getElementById("play-button-9").style.borderColor = "red";
+        document.getElementById("play-button-3").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-6").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-9").style.border = "solid 2px #FF7272";
         disableAll();
     }
 
     if (tabel[0][2] == '1' && tabel[1][2] == '1' && tabel[2][2] == '1') {
-        document.getElementById("play-button-7").style.borderColor = "green";
-        document.getElementById("play-button-8").style.borderColor = "green";
-        document.getElementById("play-button-9").style.borderColor = "green";
+        document.getElementById("play-button-7").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-8").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-9").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if (tabel[0][2] == '0' && tabel[1][2] == '0' && tabel[2][2] == '0') {
-        document.getElementById("play-button-7").style.borderColor = "red";
-        document.getElementById("play-button-8").style.borderColor = "red";
-        document.getElementById("play-button-9").style.borderColor = "red";
+        document.getElementById("play-button-7").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-8").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-9").style.border = "solid 2px #FF7272";
         disableAll();
     }
     
     if (tabel[0][1] == '1' && tabel[1][1] == '1' && tabel[2][1] == '1') {
-        document.getElementById("play-button-4").style.borderColor = "green";
-        document.getElementById("play-button-5").style.borderColor = "green";
-        document.getElementById("play-button-6").style.borderColor = "green";
+        document.getElementById("play-button-4").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-5").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-6").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if (tabel[0][1] == '0' && tabel[1][1] == '0' && tabel[2][1] == '0') {
-        document.getElementById("play-button-4").style.borderColor = "red";
-        document.getElementById("play-button-5").style.borderColor = "red";
-        document.getElementById("play-button-6").style.borderColor = "red";
+        document.getElementById("play-button-4").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-5").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-6").style.border = "solid 2px #FF7272";
         disableAll();
     }
 
     if (tabel[0][0] == '1' && tabel[1][1] == '1' && tabel[2][2] == '1') {
-        document.getElementById("play-button-1").style.borderColor = "green";
-        document.getElementById("play-button-5").style.borderColor = "green";
-        document.getElementById("play-button-9").style.borderColor = "green";
+        document.getElementById("play-button-1").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-5").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-9").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if (tabel[0][0] == '0' && tabel[1][1] == '0' && tabel[2][2] == '0') {
-        document.getElementById("play-button-1").style.borderColor = "red";
-        document.getElementById("play-button-5").style.borderColor = "red";
-        document.getElementById("play-button-9").style.borderColor = "red";
+        document.getElementById("play-button-1").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-5").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-9").style.border = "solid 2px #FF7272";
         disableAll();
     }
 
     if (tabel[0][2] == '1' && tabel[1][1] == '1' && tabel[2][0] == '1') {
-        document.getElementById("play-button-7").style.borderColor = "green";
-        document.getElementById("play-button-5").style.borderColor = "green";
-        document.getElementById("play-button-3").style.borderColor = "green";
+        document.getElementById("play-button-7").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-5").style.border = "solid 2px #9EFF7B";
+        document.getElementById("play-button-3").style.border = "solid 2px #9EFF7B";
         disableAll();
     } else if (tabel[0][2] == '0' && tabel[1][1] == '0' && tabel[2][0] == '0') {
-        document.getElementById("play-button-7").style.borderColor = "red";
-        document.getElementById("play-button-5").style.borderColor = "red";
-        document.getElementById("play-button-3").style.borderColor = "red";
+        document.getElementById("play-button-7").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-5").style.border = "solid 2px #FF7272";
+        document.getElementById("play-button-3").style.border = "solid 2px #FF7272";
         disableAll();
     }
 }
